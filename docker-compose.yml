@@ -33,5 +33,11 @@ services:
   selenium:
     image: selenium/standalone-chrome
 
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8081:8080
+
 volumes:
   dbdata: {}
