@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="709245a8-0467-45f8-acde-d2204be7ad6b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/laravel.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/laravel.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/phpunit.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-    </list>
+    <list default="true" id="709245a8-0467-45f8-acde-d2204be7ad6b" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -171,7 +166,7 @@
       <updated>1600646307741</updated>
       <workItem from="1600646310442" duration="1282000" />
       <workItem from="1601498687588" duration="7000" />
-      <workItem from="1601670740546" duration="249000" />
+      <workItem from="1601670740546" duration="936000" />
     </task>
     <servers />
   </component>
