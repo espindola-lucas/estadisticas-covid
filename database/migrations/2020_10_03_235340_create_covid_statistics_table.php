@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateC19sTable extends Migration
+class CreateCovidStatisticsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,12 @@ class CreateC19sTable extends Migration
      */
     public function up()
     {
-        Schema::create('c-19s', function (Blueprint $table) {
+        Schema::create('covid_statistics', function (Blueprint $table) {
             $table->id();
-            $table->string('ciudad');
-            $table->string('casos');
-            $table->string('muertos');
+            $table->string('cases');
+            $table->string('dead');
             $table->timestamps();
+            $table->foreignId('city_id');
         });
     }
 
@@ -29,6 +29,6 @@ class CreateC19sTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('c-19s');
+        Schema::dropIfExists('covid_statistics');
     }
 }

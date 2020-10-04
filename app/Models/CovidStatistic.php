@@ -5,7 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class c-19 extends Model
+class CovidStatistic extends Model
 {
     use HasFactory;
+
+    public function city()
+    {
+        return $this->belongsTo('App\Models\City');
+    }
 }
