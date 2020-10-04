@@ -2,7 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StatisticController;
-use App\Http\Controllers\CityController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,5 +23,3 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 })->name('dashboard');
 
 Route::resource('statistics', StatisticController::class);
-
-Route::resource('statistics', CityController::class);

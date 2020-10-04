@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\CovidStatistic;
+use App\Models\City;
 use Illuminate\Http\Request;
 
 class StatisticController extends Controller
@@ -14,9 +15,11 @@ class StatisticController extends Controller
      */
     public function index()
     {
+        $cities = City::all();
         $statistics = CovidStatistic::all();
         return view('statistics.index', [
-            'statistics' => $statistics
+            'statistics' => $statistics,
+            'cities' => $cities
         ]);
     }
 
