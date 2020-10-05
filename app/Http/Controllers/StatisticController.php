@@ -30,7 +30,7 @@ class StatisticController extends Controller
      */
     public function create()
     {
-        //
+        return view('statistics.create');
     }
 
     /**
@@ -41,7 +41,10 @@ class StatisticController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $input = $request->all();
+        CovidStatistic::create($input);
+        //City::create($input);
+        return redirect('statistics');
     }
 
     /**
