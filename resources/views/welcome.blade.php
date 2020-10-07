@@ -26,7 +26,7 @@
 
 
             <h2 class="text-black-200 font-extrabold text-3xl xs:text-4xl md:text-1xl leading-tight">
-                Pagina de desarrolladores de las estadisticas covid-19 de la Republica Argentina
+               Laravel
             </h2>
 
         <!-- <h1>Pagina de desarroladores de las estadisticas covid-19 de la Republica Argentina</h1> -->
