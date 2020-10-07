@@ -24,16 +24,16 @@
                 <div class="px-4 py-5 bg-white sm:p-6">
                     <div class="grid grid-cols-6 gap-6">
                         <div class="col-span-6 sm:col-span-4">
-                            <label class="block font-medium text-sm text-gray-700" for="city">
+                            <label class="block font-medium text-sm text-gray-700" for="name">
                                 Ciudad
                             </label>
-                            <input  class="form-input rounded-md shadow-sm mt-1 block w-full" id="city" name="city" type="text">
+                            <input  class="form-input rounded-md shadow-sm mt-1 block w-full" id="name" name="name" type="text">
                         </div>
                         <div class="col-span-6 sm:col-span-4">
-                            <label class="block font-medium text-sm text-gray-700" for="date">
-                                Fecha
+                            <label class="block font-medium text-sm text-gray-700" for="city_id">
+                                Id Ciudad
                             </label>
-                            <input  class="form-input rounded-md shadow-sm mt-1 block w-full" id="date" name="date" type="date">
+                            <input  class="form-input rounded-md shadow-sm mt-1 block w-full" id="city_id" name="city_id" type="text">
                         </div>
                         <div class="col-span-6 sm:col-span-4">
                             <label class="block font-medium text-sm text-gray-700" for="population">
@@ -63,5 +63,6 @@
             </div>
         </form>
     </div>
+</div>
 </div>
 </x-app-layout>

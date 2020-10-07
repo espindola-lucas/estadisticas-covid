@@ -43,7 +43,7 @@ class StatisticController extends Controller
     {
         $input = $request->all();
         CovidStatistic::create($input);
-        //City::create($input);
+        City::create($input);
         return redirect('statistics');
     }
 

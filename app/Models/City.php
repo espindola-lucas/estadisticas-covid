@@ -9,6 +9,7 @@ class City extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['name', 'population'];
     public function statistics()
     {
         return $this->hasMany('App\Models\CovidStatistic');

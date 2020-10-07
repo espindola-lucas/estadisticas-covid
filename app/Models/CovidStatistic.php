@@ -9,6 +9,7 @@ class CovidStatistic extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['cases', 'dead', 'city_id'];
     public function city()
     {
         return $this->belongsTo('App\Models\City');
