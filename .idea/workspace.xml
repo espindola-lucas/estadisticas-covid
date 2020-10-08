@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="709245a8-0467-45f8-acde-d2204be7ad6b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StatisticController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StatisticController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/City.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/City.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/CovidStatistic.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/CovidStatistic.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/statistics/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/statistics/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/statistics/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/statistics/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -176,6 +174,7 @@
       <workItem from="1602025838937" duration="769000" />
       <workItem from="1602028563306" duration="903000" />
       <workItem from="1602029949005" duration="307000" />
+      <workItem from="1602101514438" duration="665000" />
     </task>
     <servers />
   </component>
@@ -183,9 +182,9 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="408" y="291" width="540" height="177" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1601670815239">
+    <state x="406" y="291" width="540" height="177" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1602100344743">
       <screen x="0" y="27" width="1366" height="699" />
     </state>
-    <state x="408" y="291" width="540" height="177" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.27.1366.699@0.27.1366.699" timestamp="1601670815239" />
+    <state x="406" y="291" width="540" height="177" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.27.1366.699@0.27.1366.699" timestamp="1602100344743" />
   </component>
 </project>

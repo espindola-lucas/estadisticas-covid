@@ -66,7 +66,8 @@ class StatisticController extends Controller
      */
     public function edit(CovidStatistic $covidStatistic)
     {
-        //
+        return view('statistics.edit', [
+            'statistic'=>$covidStatistic]);
     }
 
     /**
@@ -78,7 +79,9 @@ class StatisticController extends Controller
      */
     public function update(Request $request, CovidStatistic $covidStatistic)
     {
-        //
+        $input = $request->all(); 
+        $covidStatistic->update($input);
+        return redirect('statistics');
     }
 
     /**
