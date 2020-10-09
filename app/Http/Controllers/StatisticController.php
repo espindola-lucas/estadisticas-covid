@@ -15,11 +15,9 @@ class StatisticController extends Controller
      */
     public function index()
     {
-        $cities = City::all();
-        $statistics = CovidStatistic::all();
+        $statistics = \App\Models\CovidStatistic::with('city')->orderBy('created_at', 'DESC')->paginate(1);
         return view('statistics.index', [
-            'statistics' => $statistics,
-            'cities' => $cities
+            'statistics' => $statistics
         ]);
     }
 
