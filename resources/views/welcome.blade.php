@@ -63,7 +63,6 @@
 
           </div>
         </div>
-
     </main>
     </body>
 </x-guest-layout>
