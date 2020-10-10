@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\CovidStatistic;
 use App\Models\City;
 use Illuminate\Http\Request;
 
-class StatisticController extends Controller
+class CityController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,9 +14,9 @@ class StatisticController extends Controller
      */
     public function index()
     {
-        $statistics = \App\Models\CovidStatistic::with('city')->orderBy('created_at', 'DESC')->paginate(10);
-        return view('statistics.index', [
-            'statistics' => $statistics,
+        $cities = City::all();
+        return view('cities.index', [
+            'cities' => $cities
         ]);
     }
 
@@ -28,10 +27,7 @@ class StatisticController extends Controller
      */
     public function create()
     {
-        $cities = City::all();
-        return view('statistics.create', [
-            'cities' => $cities 
-            ]);
+        return view('cities.create');
     }
 
     /**
@@ -43,17 +39,17 @@ class StatisticController extends Controller
     public function store(Request $request)
     {
         $input = $request->all();
-        CovidStatistic::create($input);
-        return redirect('statistics');
+        City::create($input);
+        return redirect('cities');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\CovidStatistic  $covidStatistic
+     * @param  \App\Models\City  $city
      * @return \Illuminate\Http\Response
      */
-    public function show(CovidStatistic $covidStatistic)
+    public function show(City $city)
     {
         //
     }
@@ -61,36 +57,33 @@ class StatisticController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\CovidStatistic  $covidStatistic
+     * @param  \App\Models\City  $city
      * @return \Illuminate\Http\Response
      */
-    public function edit(CovidStatistic $covidStatistic)
+    public function edit(City $city)
     {
-        return view('statistics.edit', [
-            'statistic'=>$covidStatistic]);
+        //
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\CovidStatistic  $covidStatistic
+     * @param  \App\Models\City  $city
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, CovidStatistic $covidStatistic)
+    public function update(Request $request, City $city)
     {
-        $input = $request->all(); 
-        $covidStatistic->update($input);
-        return redirect('statistics');
+        //
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\CovidStatistic  $covidStatistic
+     * @param  \App\Models\City  $city
      * @return \Illuminate\Http\Response
      */
-    public function destroy(CovidStatistic $covidStatistic)
+    public function destroy(City $city)
     {
         //
     }
