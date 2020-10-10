@@ -10,7 +10,7 @@
                         </div>
                     </div>
         <div class="mt-5 md:mt-0 md:col-span-2">
-        <form method='POST' action="{{ route('statistics.store') }} ">
+        <form method='POST' action="{{ route('statistic.store') }} ">
             @csrf
             <div class="shadow overflow-hidden sm:rounded-md">
                 <div class="px-4 py-5 bg-white sm:p-6">

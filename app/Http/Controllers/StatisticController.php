@@ -17,7 +17,7 @@ class StatisticController extends Controller
     {
         $cities = City::all();
         $statistics = \App\Models\CovidStatistic::with('city')->orderBy('created_at', 'DESC')->paginate(10);
-        return view('statistics.index', [
+        return view('statistic.index', [
             'statistics' => $statistics,
             'cities' => $cities
         ]);
@@ -31,7 +31,7 @@ class StatisticController extends Controller
     public function create()
     {
         $cities = City::all();
-        return view('statistics.create', [
+        return view('statistic.create', [
             'cities' => $cities 
             ]);
     }
@@ -46,7 +46,7 @@ class StatisticController extends Controller
     {
         $input = $request->all();
         CovidStatistic::create($input);
-        return redirect('statistics');
+        return redirect('statistic');
     }
 
     /**
@@ -68,7 +68,7 @@ class StatisticController extends Controller
      */
     public function edit(CovidStatistic $covidStatistic)
     {
-        return view('statistics.edit', [
+        return view('statistic.edit', [
             'covidStatistic'=>$covidStatistic]);
     }
 
@@ -87,7 +87,7 @@ class StatisticController extends Controller
             'dead' => $input['dead'],
             'city_id' => $input['city_id']
         ]);
-        return redirect('statistics');
+        return redirect('statistic');
     }
 
     /**
@@ -99,6 +99,6 @@ class StatisticController extends Controller
     public function destroy(CovidStatistic $covidStatistic)
     {
         $covidStatistic->delete();
-        return redirect('statistics');
+        return redirect('statistic');
     }
 }

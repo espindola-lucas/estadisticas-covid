@@ -18,7 +18,7 @@
                     <x-jet-nav-link href="{{ route('cities.index') }}" :active="request()->routeIs('cities.*')">
                         Ciudades
                     </x-jet-nav-link>
-                    <x-jet-nav-link href="{{ route('statistics.index') }}" :active="request()->routeIs('statistics.*')">
+                    <x-jet-nav-link href="{{ route('statistic.index') }}" :active="request()->routeIs('statistic.*')">
                         Estadisticas
                     </x-jet-nav-link>
                 </div>
@@ -114,7 +114,7 @@
             <x-jet-responsive-nav-link href="/dashboard" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
             </x-jet-responsive-nav-link>
-            <x-jet-nav-link href="{{ route('statistics.index') }}" :active="request()->routeIs('statistics.*')">
+            <x-jet-nav-link href="{{ route('statistic.index') }}" :active="request()->routeIs('statistic.*')">
                 Estadisticas
             </x-jet-nav-link>
         </div>

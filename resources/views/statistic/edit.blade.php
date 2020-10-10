@@ -18,7 +18,7 @@
                         </div>
                     </div>
         <div class="mt-5 md:mt-0 md:col-span-2">
-        <form method='POST' action="{{ route('statistics.update', $statistic->id) }}">
+        <form method='POST' action="{{ route('statistic.update', $covidStatistic) }}">
             @csrf
             @method('PUT')
             <div class="col-span-6 sm:col-span-4">

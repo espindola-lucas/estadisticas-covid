@@ -22,7 +22,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
-Route::resource('statistics', StatisticController::class);
+Route::resource('statistic', StatisticController::class);
 
 Route::resource('cities', CityController::class);
 
