@@ -11,29 +11,37 @@
     <body class="antialiased">
 
     <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
-            @if (Route::has('login'))
-                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-                    @auth
-                        <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 underline">Dashboard</a>
-                    @else
-                        <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Login</a>
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>
-                        @endif
-                    @endif
-                </div>
+      @if (Route::has('login'))
+        <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+          @auth
+            <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 underline">Dashboard</a>
+            @else
+              <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Login</a>
+              @if (Route::has('register'))
+                <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>
+              @endif
             @endif
+        </div>
+      @endif
     <!-- component -->
 
     <main class="flex-grow flex justify-center items-center">
 
         <div class="mx-auto px-4 sm:px-8 py-2 text-center">
+          <h1 class="text-4xl "> Covid-19 </h1>
 
-          <div class="text-center max-w-lg mx-auto mt-6">
-            <div class="h-4 bg-gray-500 w-40 block mx-auto rounded-sm"></div>
-            <div class="h-2 bg-gray-400 w-64 mt-4 block mx-auto rounded-sm"></div>
-            <div class="h-2 bg-gray-400 w-48 mt-2 block mx-auto rounded-sm"></div>
-          </div>
+          <div class="p-2 bg-blue-200 text-center xl:max-w-2xl xl:h-40 mx-auto mt-6">
+            Considerando el diferente impacto en la dinamica de transmision del virus, la diversidad
+            geografica, socieconomica y demografica, a travez del Decreto 754/2020 y hasta el 25 de 
+            octubre de 2020 se establece un abordaje en materia epidemiologica que contempla las distantas
+            realidades del pais.
+            <div class="text-center xl:max-w-2xl mx-auto text-blue-800">
+              • Aislamiento Social, Preventivo y Obligatorio.
+            </div>
+            <div class="text-center xl:max-w-2xl mx-auto text-blue-800">
+              • Distanciamiento Social, Preventivo y Obligatorio.
+            </div>
+          </div> 
 
           <div class="grid grid-cols-6 gap-4 items-start mt-8 mx-auto px-8">
             @foreach ($cities as $city)
