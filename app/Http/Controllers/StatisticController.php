@@ -15,11 +15,9 @@ class StatisticController extends Controller
      */
     public function index()
     {
-        $cities = City::all();
-        $statistics = \App\Models\CovidStatistic::with('city')->orderBy('created_at', 'DESC')->paginate(10);
-        return view('statistic.index', [
-            'statistics' => $statistics,
-            'cities' => $cities
+        $statistics = CovidStatistic::with('city')->orderBy('created_at', 'DESC')->get();
+        return view('statistic.index',[
+            'statistics' => $statistics
         ]);
     }
 
@@ -66,10 +64,13 @@ class StatisticController extends Controller
      * @param  \App\Models\CovidStatistic  $covidStatistic
      * @return \Illuminate\Http\Response
      */
-    public function edit(CovidStatistic $covidStatistic)
+    public function edit(CovidStatistic $statistic)
     {
+        $cities = City::all();
         return view('statistic.edit', [
-            'covidStatistic'=>$covidStatistic]);
+            'covidStatistic'=>$statistic,
+            'cities'=>$cities
+            ]);
     }
 
     /**
@@ -79,10 +80,10 @@ class StatisticController extends Controller
      * @param  \App\Models\CovidStatistic  $covidStatistic
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, CovidStatistic $covidStatistic)
+    public function update(Request $request, CovidStatistic $statistic)
     {
         $input = $request->all(); 
-        $covidStatistic->update([
+        $statistic->update([
             'cases' => $input['cases'],
             'dead' => $input['dead'],
             'city_id' => $input['city_id']
@@ -96,9 +97,9 @@ class StatisticController extends Controller
      * @param  \App\Models\CovidStatistic  $covidStatistic
      * @return \Illuminate\Http\Response
      */
-    public function destroy(CovidStatistic $covidStatistic)
+    public function destroy(CovidStatistic $statistic)
     {
-        $covidStatistic->delete();
+        $statistic->delete();
         return redirect('statistic');
     }
 }

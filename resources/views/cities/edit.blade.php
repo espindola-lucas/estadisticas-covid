@@ -36,6 +36,12 @@
                             </label>
                             <input  class="form-input rounded-md shadow-sm mt-1 block w-full" id="population" name="population" type="text" value="{{ $city->population }}">
                         </div>
+                        <div class="col-span-6 sm:col-span-4">
+                            <label class="block font-medium text-sm text-gray-700" for="image">
+                                Agregar foto de ciudad
+                            </label>
+                            <input  class="form-input rounded-md shadow-sm mt-1 block w-full" id="image" name="image" type="text" value="{{ $city->image }}">
+                        </div>
                     </div>
                 </div>
                 <div class="flex items-center justify-end px-4 py-3 bg-gray-50 text-right sm:px-6">

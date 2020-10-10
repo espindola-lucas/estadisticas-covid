@@ -19,13 +19,19 @@
                             <label class="block font-medium text-sm text-gray-700" for="name">
                                 Nombre Ciudad
                             </label>
-                            <input  class="form-input rounded-md shadow-sm mt-1 block w-full" id="name" name="name" type="text">
+                            <input class="form-input rounded-md shadow-sm mt-1 block w-full" id="name" name="name" type="text">
                         </div>
                         <div class="col-span-6 sm:col-span-4">
                             <label class="block font-medium text-sm text-gray-700" for="population">
                                 Cantidad de Habitantes
                             </label>
                             <input  class="form-input rounded-md shadow-sm mt-1 block w-full" id="population" name="population" type="text">
+                        </div>
+                        <div class="col-span-6 sm:col-span-4">
+                            <label class="block font-medium text-sm text-gray-700" for="image">
+                                Agregar foto de ciudad
+                            </label>
+                            <input  class="form-input rounded-md shadow-sm mt-1 block w-full" id="image" name="image" type="text">
                         </div>
                     </div>
                 </div>

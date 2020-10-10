@@ -39,7 +39,11 @@ class CityController extends Controller
     public function store(Request $request)
     {
         $input = $request->all();
-        City::create($input);
+        City::create([
+            'name' => $input['name'],
+            'population' => $input['population'],
+            'image' =>  $input['image']
+        ]);
         return redirect('cities');
     }
 
