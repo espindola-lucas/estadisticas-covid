@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="709245a8-0467-45f8-acde-d2204be7ad6b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/views/statistics/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/statistics/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/estadisticas-covid.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/estadisticas-covid.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Browser/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Browser/ExampleTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,6 +141,13 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
       <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
       <path value="$PROJECT_DIR$/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/vendor/staabm/annotate-pull-request-from-checkstyle" />
+      <path value="$PROJECT_DIR$/vendor/phan/phan" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-client-contracts" />
+      <path value="$PROJECT_DIR$/vendor/microsoft/tolerant-php-parser" />
+      <path value="$PROJECT_DIR$/vendor/felixfbecker/advanced-json-rpc" />
+      <path value="$PROJECT_DIR$/vendor/sabre/event" />
+      <path value="$PROJECT_DIR$/vendor/netresearch/jsonmapper" />
     </include_path>
   </component>
   <component name="ProjectId" id="1hnUMuVBs4sFttfu9KFtNdr1b0Y" />
@@ -174,6 +184,7 @@
       <workItem from="1602029949005" duration="307000" />
       <workItem from="1602101514438" duration="1261000" />
       <workItem from="1602295012707" duration="24000" />
+      <workItem from="1602310280473" duration="120000" />
     </task>
     <servers />
   </component>
