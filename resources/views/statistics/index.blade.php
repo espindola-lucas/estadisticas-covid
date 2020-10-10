@@ -53,7 +53,7 @@
                                 </div> -->
                                 <div class="ml-0">
                                     <div class="text-sm leading-5 font-medium text-gray-900">
-                                    {{ $statistic->city->name }}
+                                    {{ $statistic->city_id }}
                                     </div>
                                 </div>
                                 </div>
@@ -62,7 +62,7 @@
                                 {{ $statistic->created_at }}
                             </td>
                             <td class="px-6 py-4 whitespace-no-wrap">
-                                <div class="text-sm leading-5 text-gray-900">{{ $statistic->city->population }}</div>
+                                <div class="text-sm leading-5 text-gray-900"> </div>
                             </td>
                             <td class="px-6 py-4 whitespace-no-wrap">
                                 <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
@@ -75,7 +75,12 @@
                                 </span>
                             </td>   
                             <td class="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium">
-                                <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
+                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-purple-100 text-purple-800">
+                                <a href="#" class="text-indigo-600 hover:text-indigo-900">Editar</a>
+                            </td>
+                            <td class="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium">
+                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-purple-100 text-purple-800">
+                                <a href="#" class="text-indigo-600 hover:text-indigo-900">Eliminar</a>
                             </td>
                             </tr>
                             @endforeach
