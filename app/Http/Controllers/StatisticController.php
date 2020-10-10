@@ -69,7 +69,7 @@ class StatisticController extends Controller
     public function edit(CovidStatistic $covidStatistic)
     {
         return view('statistics.edit', [
-            'statistic'=>$covidStatistic]);
+            'covidStatistic'=>$covidStatistic]);
     }
 
     /**
@@ -82,7 +82,11 @@ class StatisticController extends Controller
     public function update(Request $request, CovidStatistic $covidStatistic)
     {
         $input = $request->all(); 
-        $covidStatistic->update($input);
+        $covidStatistic->update([
+            'cases' => $input['cases'],
+            'dead' => $input['dead'],
+            'city_id' => $input['city_id']
+        ]);
         return redirect('statistics');
     }
 
@@ -94,7 +98,7 @@ class StatisticController extends Controller
      */
     public function destroy(CovidStatistic $covidStatistic)
     {
-        $covidStatistic -> delete();
+        $covidStatistic->delete();
         return redirect('statistics');
     }
 }

@@ -62,7 +62,7 @@ class CityController extends Controller
      */
     public function edit(City $city)
     {
-        //
+        return view ('cities.edit', ['city' => $city]);
     }
 
     /**
@@ -74,7 +74,9 @@ class CityController extends Controller
      */
     public function update(Request $request, City $city)
     {
-        //
+        $input=$request->all();
+        $city -> update($input);
+        return redirect('cities');
     }
 
     /**
@@ -85,7 +87,7 @@ class CityController extends Controller
      */
     public function destroy(City $city)
     {
-        $city -> delete();
+        $city->delete();
         return redirect('cities');
     }
 }

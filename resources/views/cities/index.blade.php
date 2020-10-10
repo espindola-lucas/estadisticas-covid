@@ -57,7 +57,7 @@
                             </td>
                             <td class="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium">
                                 <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-purple-100 text-purple-800">
-                                <a href="#" class="text-indigo-600 hover:text-indigo-900">Editar</a>
+                                <a href="{{ route('cities.edit',$city->id) }}" class="text-indigo-600 hover:text-indigo-900">Editar</a>
                             </td>
                             <form method="POST" action="{{ route('cities.destroy', $city) }}">
                                @method('DELETE')
