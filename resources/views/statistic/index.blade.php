@@ -62,7 +62,7 @@
                                 {{ $statistic->created_at }}
                             </td>
                             <td class="px-6 py-4 whitespace-no-wrap">
-                                <div class="text-sm leading-5 text-gray-900"> </div>
+                                <div class="text-sm leading-5 text-gray-900">{{ $statistic->city->population }}</div>
                             </td>
                             <td class="px-6 py-4 whitespace-no-wrap">
                                 <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
