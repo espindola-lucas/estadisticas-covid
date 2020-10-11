@@ -6,7 +6,7 @@ use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Laravel\Dusk\Browser;
 use Tests\DuskTestCase;
 
-class CreateTest extends DuskTestCase
+class EditTest extends DuskTestCase
 {
     use DatabaseMigrations;
     /**
@@ -14,11 +14,11 @@ class CreateTest extends DuskTestCase
      *
      * @return void
      */
-    public function testCreateCity(){
+    public function testEditTodo(){
         $this->browse(function ($browser) {
             $browser->visit('/register')
-                ->type('name','UserDusk')
-                ->type('email','dusk@dusk')
+                ->type('name', 'edit dusk test')
+                ->type('email', 'edit@dusk')
                 ->type('password','12345678')
                 ->type('password_confirmation','12345678')
                 ->press('REGISTER')
@@ -27,7 +27,13 @@ class CreateTest extends DuskTestCase
                 ->type('population', '200.000')
                 ->type('image', 'imagen/dusk')
                 ->click('@create')
-                ->assertSee('City');
+                ->assertSee('City')
+                ->visit('cities/1/edit')
+                ->type('name', 'Edit Dusk')
+                ->type('population', '200.000')
+                ->type('image', 'imagen/dusk')
+                ->click('@edit')
+                ->assertSee('Edit Dusk');
         }   );
     }
 }
