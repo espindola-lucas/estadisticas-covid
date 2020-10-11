@@ -1,4 +1,4 @@
-<x-statistics>
+<x-cities>
     <!-- encabezado -->
     <div class="mb-6 lg:flex lg:items-center lg:justify-between">
         <div class="flex-1 min-w-0">
@@ -33,6 +33,7 @@
                             </th>
                             <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
                                 Población
+                            </th>
                         </thead>
                         <tbody class="bg-white divide-y divide-gray-200">
                             @foreach($cities as $city)
@@ -78,4 +79,4 @@
                 </div>
             </div>
         </div>
-</x-statistics>
+</x-cities>
