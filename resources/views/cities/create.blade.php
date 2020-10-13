@@ -5,7 +5,7 @@
                         <div class="px-4 sm:px-0">
                             <h3 class="text-lg font-medium text-gray-900">Agregar Ciudad</h3>
                             <p class="mt-1 text-sm text-gray-600">
-                                Completar con ciudad y poblacion.
+                                Completar con ciudad y poblacion e imagen.
                             </p>
                         </div>
                     </div>

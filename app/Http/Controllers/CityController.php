@@ -66,7 +66,9 @@ class CityController extends Controller
      */
     public function edit(City $city)
     {
-        return view ('cities.edit', ['city' => $city]);
+        return view ('cities.edit', [
+            'city' => $city
+            ]);
     }
 
     /**

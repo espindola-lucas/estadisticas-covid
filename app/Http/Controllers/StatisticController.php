@@ -68,7 +68,7 @@ class StatisticController extends Controller
     {
         $cities = City::all();
         return view('statistic.edit', [
-            'covidStatistic'=>$statistic,
+            'statistic'=>$statistic,
             'cities'=>$cities
             ]);
     }

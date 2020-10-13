@@ -18,7 +18,7 @@
                         </div>
                     </div>
         <div class="mt-5 md:mt-0 md:col-span-2">
-        <form method='POST' action="{{ route('statistic.update', $covidStatistic) }}">
+        <form method='POST' action="{{ route('statistic.update', $statistic) }}">
             @csrf
             @method('PUT')
             <div class="col-span-6 sm:col-span-4">
@@ -35,24 +35,17 @@
                             </div>
                         </div>
                         <div class="grid grid-cols-6 gap-6">
-                        <!-- <div class="relative">
-                            <select class="block appearance-none w-full bg-grey-lighter border border-grey-lighter text-grey-darker py-3 px-4 pr-8 rounded" id="specie_id" name="specie_id" >
-                            @foreach($cities as $city)
-                                <option value="{{ $city->id}}" selected> {{$city->name}}</option>
-                            @endforeach
-                            </select>
-                        </div>     -->
                         <div class="mt-5 col-span-6 sm:col-span-4">
                             <label class="block font-medium text-sm text-gray-700" for="cases">
                                 Casos
                             </label>
-                            <input  class="form-input rounded-md shadow-sm mt-1 block w-full" id="cases" name="cases" type="text">
+                            <input  class="form-input rounded-md shadow-sm mt-1 block w-full" id="cases" name="cases" type="text" value="{{ $statistic->cases }}">
                         </div>
                         <div class="col-span-6 sm:col-span-4">
                             <label class="block font-medium text-sm text-gray-700" for="dead">
                                 Muertos
                             </label>
-                            <input  class="form-input rounded-md shadow-sm mt-1 block w-full" id="dead" name="dead" type="text">
+                            <input  class="form-input rounded-md shadow-sm mt-1 block w-full" id="dead" name="dead" type="text" value="{{ $statistic->dead }}">
                         </div>
                     </div>
                 </div>

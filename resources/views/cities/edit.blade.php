@@ -11,9 +11,9 @@
                 <div  class="md:grid md:grid-cols-3 md:gap-6">
                     <div class="md:col-span-1">
                         <div class="px-4 sm:px-0">
-                            <h3 class="text-lg font-medium text-gray-900">Crear estadistica</h3>
+                            <h3 class="text-lg font-medium text-gray-900">Editar ciudad</h3>
                             <p class="mt-1 text-sm text-gray-600">
-                                Completar con ciudad, fecha, poblacion, casos y muertos.
+                                Completar con ciudad, poblacion e imagen.
                             </p>
                         </div>
                     </div>
