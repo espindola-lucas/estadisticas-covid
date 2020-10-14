@@ -15,9 +15,11 @@ class StatisticController extends Controller
      */
     public function index()
     {
+        $cities = City::all();
         $statistics = CovidStatistic::with('city')->orderBy('created_at', 'DESC')->get();
         return view('statistic.index',[
-            'statistics' => $statistics
+            'statistics' => $statistics,
+            'cities' => $cities
         ]);
     }
 
