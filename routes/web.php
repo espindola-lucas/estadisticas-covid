@@ -22,8 +22,12 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
-Route::resource('statistic', StatisticController::class);
+Route::middleware(['auth:sanctum', 'verified'])->group(function (){
+    Route::resource('statistic', StatisticController::class);
+});
 
-Route::resource('cities', CityController::class);
+Route::middleware(['auth:sanctum', 'verified'])->group(function (){
+    Route::resource('cities', CityController::class);
+});
 
 Route::resource('/', HomeController::class);
