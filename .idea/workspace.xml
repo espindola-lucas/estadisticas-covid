@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="709245a8-0467-45f8-acde-d2204be7ad6b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,10 +156,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -188,6 +192,9 @@
       <workItem from="1602386103598" duration="1054000" />
       <workItem from="1602389294904" duration="687000" />
       <workItem from="1602713232688" duration="983000" />
+      <workItem from="1603398719054" duration="3091000" />
+      <workItem from="1603404627538" duration="262000" />
+      <workItem from="1603408012419" duration="5218000" />
     </task>
     <servers />
   </component>
@@ -199,6 +206,18 @@
       <screen x="0" y="27" width="1366" height="699" />
     </state>
     <state x="416" y="134" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1366.699@0.27.1366.699" timestamp="1602386291295" />
+    <state x="189" y="96" width="977" height="568" key="NewPhpClassDialog" timestamp="1603404235195">
+      <screen x="0" y="27" width="1366" height="699" />
+    </state>
+    <state x="189" y="96" width="977" height="568" key="NewPhpClassDialog/0.27.1366.699@0.27.1366.699" timestamp="1603404235195" />
+    <state x="172" y="27" width="1012" height="699" key="SettingsEditor" timestamp="1603409596676">
+      <screen x="0" y="27" width="1366" height="699" />
+    </state>
+    <state x="172" y="27" width="1012" height="699" key="SettingsEditor/0.27.1366.699@0.27.1366.699" timestamp="1603409596676" />
+    <state x="346" y="47" width="672" height="678" key="search.everywhere.popup" timestamp="1603402862591">
+      <screen x="0" y="27" width="1366" height="699" />
+    </state>
+    <state x="346" y="47" width="672" height="678" key="search.everywhere.popup/0.27.1366.699@0.27.1366.699" timestamp="1603402862591" />
     <state x="406" y="291" width="540" height="177" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1602386141149">
       <screen x="0" y="27" width="1366" height="699" />
     </state>
