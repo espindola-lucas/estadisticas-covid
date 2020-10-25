@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use App\Models\City;
+use App\Models\User;
 use App\Models\CovidStatistic;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -25,7 +26,8 @@ class CovidStatisticFactory extends Factory
         return [
             'cases'=>$this->faker->numberBetween(1,1000000),
             'dead'=>$this->faker->numberBetween(1,1000000),
-            'city_id'=> City::factory()->create()
+            'city_id'=> City::factory()->create(),
+            'user_id' => User::factory()->create(),
         ];
     }
 }

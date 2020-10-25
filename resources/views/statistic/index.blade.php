@@ -7,6 +7,7 @@
             </h2>
         </div>
         <div class="mt-5 flex lg:mt-0 lg:ml-4">
+            @can('create', App\Models\CovidStatistic::class)
             <span class="sm:ml-3 shadow-sm rounded-md">
                 <a href="{{ url('statistic/create') }}">
                     <button type="button" class="inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline-indigo focus:border-indigo-700 active:bg-indigo-700 transition duration-150 ease-in-out">
@@ -15,6 +16,7 @@
                     </button>
                 </a>
             </span>
+            @endcan
         </div>
         </div>
         <!-- tabla -->
@@ -27,6 +29,9 @@
                             <tr>
                             <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
                                 Ciudad
+                            </th>
+                            <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                                Usuario
                             </th>
                             <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
                                 Fecha de estadistica
@@ -59,6 +64,9 @@
                                 </div>
                             </td>
                             <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
+                                {{ $statistic->user->name }}
+                            </td>
+                            <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
                                 {{ $statistic->created_at }}
                             </td>
                             <td class="px-6 py-4 whitespace-no-wrap">
@@ -76,16 +84,20 @@
                             </td>   
                             <td class="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium">
                                 <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-purple-100 text-purple-800">
-                                <a href="{{ route('statistic.edit', $statistic) }}" class="text-indigo-600 hover:text-indigo-900">Editar</a>
+                                @can ('update', $statistic)
+                                    <a href="{{ route('statistic.edit', $statistic) }}" class="text-indigo-600 hover:text-indigo-900">Editar</a>
+                                @endcan
                             </td>
                             <form method="POST" action="{{ route('statistic.destroy', $statistic) }}">
                                @method('DELETE')
                                 @csrf
                                 <td class="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium">
                                     <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-purple-100 text-purple-800">
+                                    @can ('update', $statistic)
                                     <button type="submit" class="text-indigo-600 hover:text-indigo-900">
                                         Eliminar
                                     </button>
+                                    @endcan
                                 </td>
                             </form>
                             </tr>

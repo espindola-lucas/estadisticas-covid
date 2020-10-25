@@ -19,6 +19,7 @@ class CreateCovidStatisticsTable extends Migration
             $table->string('dead');
             $table->timestamps();
             $table->foreignId('city_id');
+            $table->foreignId('user_id');
         });
     }
 
