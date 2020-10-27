@@ -5,6 +5,8 @@ namespace Tests\Browser;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Laravel\Dusk\Browser;
 use Tests\DuskTestCase;
+use App\Models\City;
+use App\Models\User;
 
 class CreateTest extends DuskTestCase
 {
@@ -15,19 +17,24 @@ class CreateTest extends DuskTestCase
      * @return void
      */
     public function testCreateCity(){
-        $this->browse(function ($browser) {
-            $browser->visit('/register')
-                ->type('name','UserDusk')
-                ->type('email','dusk@dusk')
-                ->type('password','12345678')
-                ->type('password_confirmation','12345678')
-                ->press('REGISTER')
-                ->visit('cities/create')
-                ->type('name', 'City Dusk')
-                ->type('population', '200.000')
-                ->type('image', 'imagen/dusk')
+
+        $user = User::factory()->create([
+            'email' => 'test@test.com',
+            'password' => bcrypt('12345678')
+        ]);
+
+        $this->browse(function ($browser) use ($user) {
+            $browser->visit('/login')
+                ->type('email', $user->email)
+                ->type('password', '12345678')
+                ->press('LOGIN')
+                ->visit('cities')
+                ->click('@insertar')
+                ->type('name', 'Test City')
+                ->type('population', '1000')
+                ->type('image', 'Photo city')
                 ->click('@create')
-                ->assertSee('City');
-        }   );
+                ->assertSee('Test City');
+            });
     }
 }

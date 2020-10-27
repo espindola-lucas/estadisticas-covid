@@ -9,7 +9,7 @@
         <div class="mt-5 flex lg:mt-0 lg:ml-4">
             <span class="sm:ml-3 shadow-sm rounded-md">
                 <a href="{{ url('cities/create') }}">
-                    <button type="button" class="inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline-indigo focus:border-indigo-700 active:bg-indigo-700 transition duration-150 ease-in-out">
+                    <button dusk='insertar' type="button" class="inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline-indigo focus:border-indigo-700 active:bg-indigo-700 transition duration-150 ease-in-out">
                         <svg class="-ml-1 mr-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
                         Agregar Ciudad
                     </button>
@@ -58,7 +58,7 @@
                             </td>
                             <td class="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium">
                                 <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-purple-100 text-purple-800">
-                                <a href="{{ route('cities.edit',$city->id) }}" class="text-indigo-600 hover:text-indigo-900">Editar</a>
+                                <a dusk="goEdit" href="{{ route('cities.edit',$city->id) }}" class="text-indigo-600 hover:text-indigo-900">Editar</a>
                             </td>
                             <form method="POST" action="{{ route('cities.destroy', $city) }}">
                                @method('DELETE')
