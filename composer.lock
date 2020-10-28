@@ -1100,16 +1100,16 @@
         },
         {
             "name": "jaybizzle/crawler-detect",
-            "version": "v1.2.100",
+            "version": "v1.2.101",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JayBizzle/Crawler-Detect.git",
-                "reference": "82e1d983e29d9fea6e8e5505110d0278a5285f36"
+                "reference": "bffc10d3090bc99231c17f9960506ab51e9d25f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/82e1d983e29d9fea6e8e5505110d0278a5285f36",
-                "reference": "82e1d983e29d9fea6e8e5505110d0278a5285f36",
+                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/bffc10d3090bc99231c17f9960506ab51e9d25f5",
+                "reference": "bffc10d3090bc99231c17f9960506ab51e9d25f5",
                 "shasum": ""
             },
             "require": {
@@ -1145,7 +1145,7 @@
                 "crawlerdetect",
                 "php crawler detect"
             ],
-            "time": "2020-10-11T18:08:38+00:00"
+            "time": "2020-10-24T09:23:11+00:00"
         },
         {
             "name": "jenssegers/agent",
@@ -1450,16 +1450,16 @@
         },
         {
             "name": "laravel/jetstream",
-            "version": "v1.5.1",
+            "version": "v1.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/jetstream.git",
-                "reference": "5a1967bb1f0f73620313b9b9431ac122ef20c79c"
+                "reference": "872ba5d811f8451fd6b5f61a0422ac303e6f4048"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/jetstream/zipball/5a1967bb1f0f73620313b9b9431ac122ef20c79c",
-                "reference": "5a1967bb1f0f73620313b9b9431ac122ef20c79c",
+                "url": "https://api.github.com/repos/laravel/jetstream/zipball/872ba5d811f8451fd6b5f61a0422ac303e6f4048",
+                "reference": "872ba5d811f8451fd6b5f61a0422ac303e6f4048",
                 "shasum": ""
             },
             "require": {
@@ -1508,7 +1508,7 @@
                 "laravel",
                 "tailwind"
             ],
-            "time": "2020-10-21T17:02:54+00:00"
+            "time": "2020-10-27T21:28:35+00:00"
         },
         {
             "name": "laravel/sanctum",
