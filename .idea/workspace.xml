@@ -1,9 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:heroku" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:composer" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:composer" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:fideloper" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:composer" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:laravel" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:composer" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:phpunit" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="709245a8-0467-45f8-acde-d2204be7ad6b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/tests/Feature/HomeTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpunit.dusk.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.dusk.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/ExampleTest.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,17 +258,33 @@
       <workItem from="1603398719054" duration="3091000" />
       <workItem from="1603404627538" duration="262000" />
       <workItem from="1603408012419" duration="5816000" />
+      <workItem from="1604000372847" duration="4064000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="416" y="134" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1602386291295">
+    <state x="442" y="27" width="462" height="699" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604002713560">
       <screen x="0" y="27" width="1366" height="699" />
     </state>
-    <state x="416" y="134" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1366.699@0.27.1366.699" timestamp="1602386291295" />
+    <state x="442" y="27" width="462" height="699" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.27.1366.699@0.27.1366.699" timestamp="1604002713560" />
+    <state x="416" y="134" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1604004200466">
+      <screen x="0" y="27" width="1366" height="699" />
+    </state>
+    <state x="416" y="134" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1366.699@0.27.1366.699" timestamp="1604004200466" />
     <state x="189" y="96" width="977" height="568" key="NewPhpClassDialog" timestamp="1603404235195">
       <screen x="0" y="27" width="1366" height="699" />
     </state>
@@ -216,9 +297,9 @@
       <screen x="0" y="27" width="1366" height="699" />
     </state>
     <state x="346" y="47" width="672" height="678" key="search.everywhere.popup/0.27.1366.699@0.27.1366.699" timestamp="1603402862591" />
-    <state x="406" y="291" width="540" height="177" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1602386141149">
+    <state x="406" y="291" width="540" height="177" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1604000528193">
       <screen x="0" y="27" width="1366" height="699" />
     </state>
-    <state x="406" y="291" width="540" height="177" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.27.1366.699@0.27.1366.699" timestamp="1602386141149" />
+    <state x="406" y="291" width="540" height="177" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.27.1366.699@0.27.1366.699" timestamp="1604000528193" />
   </component>
 </project>
