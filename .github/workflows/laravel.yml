@@ -7,15 +7,6 @@ on:
 jobs:
  laravel-tests:
    runs-on: ubuntu-latest
-   services:
-    postgres:
-        image: postgres:9.6
-        env:
-            DB_USERNAME: myuser
-            DB_PASSWORD: thisisasecretpassword
-            DB_DATABASE: mydb
-        ports:
-            - 5432:5432
    steps:
    - uses: actions/checkout@v2
    - name: Copy .env
@@ -32,7 +23,7 @@ jobs:
        touch database/database.sqlite
    - name: Execute tests (Unit and Feature tests) via PHPUnit
      env:
-       DB_CONNECTION: pgsql
-       DB_DATABASE: database/database.pgsql
+       DB_CONNECTION: sqlite
+       DB_DATABASE: database/database.sqlite
      run: vendor/bin/phpunit --coverage-clover=coverage.xml
    - uses: codecov/codecov-action@v1
