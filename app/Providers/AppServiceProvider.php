@@ -28,9 +28,4 @@ class AppServiceProvider extends ServiceProvider
             \URL::forceScheme('https');
         }
     }
-
-    public function boot_test_laravel()
-    {
-        Schema::defaultStringLength(191);
-    }
 }
