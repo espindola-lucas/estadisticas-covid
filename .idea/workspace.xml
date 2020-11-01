@@ -62,13 +62,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="709245a8-0467-45f8-acde-d2204be7ad6b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/Feature/HomeTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpunit.dusk.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.dusk.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Unit/ExampleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/CovidStatistic.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/CovidStatistic.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/UserTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/UserTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -258,7 +254,8 @@
       <workItem from="1603398719054" duration="3091000" />
       <workItem from="1603404627538" duration="262000" />
       <workItem from="1603408012419" duration="5816000" />
-      <workItem from="1604000372847" duration="4064000" />
+      <workItem from="1604000372847" duration="4660000" />
+      <workItem from="1604194743438" duration="2833000" />
     </task>
     <servers />
   </component>
@@ -275,16 +272,17 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="442" y="27" width="462" height="699" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604002713560">
       <screen x="0" y="27" width="1366" height="699" />
     </state>
     <state x="442" y="27" width="462" height="699" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.27.1366.699@0.27.1366.699" timestamp="1604002713560" />
-    <state x="416" y="134" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1604004200466">
+    <state x="416" y="134" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1604194817310">
       <screen x="0" y="27" width="1366" height="699" />
     </state>
-    <state x="416" y="134" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1366.699@0.27.1366.699" timestamp="1604004200466" />
+    <state x="416" y="134" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1366.699@0.27.1366.699" timestamp="1604194817310" />
     <state x="189" y="96" width="977" height="568" key="NewPhpClassDialog" timestamp="1603404235195">
       <screen x="0" y="27" width="1366" height="699" />
     </state>
