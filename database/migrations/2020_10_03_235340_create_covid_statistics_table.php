@@ -18,8 +18,10 @@ class CreateCovidStatisticsTable extends Migration
             $table->string('cases');
             $table->string('dead');
             $table->timestamps();
-            $table->foreignId('city_id');
             $table->foreignId('user_id');
+            $table->foreignId('city_id')
+            ->references('id')->on('cities')
+            ->onDelete('cascade'); 
         });
     }
 
