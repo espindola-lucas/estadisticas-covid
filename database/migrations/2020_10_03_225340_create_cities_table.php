@@ -19,6 +19,9 @@ class CreateCitiesTable extends Migration
             $table->string('population');
             $table->string('image');
             $table->timestamps();
+            $table->foreignId('city_id')
+                  ->references('id')->on('cities')
+                  ->onDelete('cascade');
         });
     }
 
