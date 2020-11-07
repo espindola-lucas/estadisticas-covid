@@ -39,10 +39,30 @@ class CityController extends Controller
     public function store(Request $request)
     {
         $input = $request->all();
+
+        // Save file to disk
+
+        // $imagePath = $request->file('image')->store('files',
+        // [
+        //     'disk' => 'public'
+        // ]);
+
+        if ($request->has('imageToUpload'))
+        {
+            $filePath = $request->file('imageToUpload')->store('files',
+            [
+                'disk' => 'public'
+            ]);
+            $input['image'] = $filePath;
+        }
+
+        $input = $request->all();
+        $request ->file('image')->Store('files');
+
         City::create([
             'name' => $input['name'],
             'population' => $input['population'],
-            'image' =>  $input['image']
+            'image' =>  $filePath
         ]);
         return redirect('cities');
     }

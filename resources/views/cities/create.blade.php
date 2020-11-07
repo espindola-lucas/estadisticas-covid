@@ -10,7 +10,7 @@
                         </div>
                     </div>
         <div class="mt-5 md:mt-0 md:col-span-2">
-        <form method='POST' action="{{ route('cities.store') }} ">
+        <form method='POST' action="{{ route('cities.store') }}" enctype="multipart/form-data">
             @csrf
             <div class="shadow overflow-hidden sm:rounded-md">
                 <div class="px-4 py-5 bg-white sm:p-6">
@@ -31,7 +31,7 @@
                             <label class="block font-medium text-sm text-gray-700" for="image">
                                 Agregar foto de ciudad
                             </label>
-                            <input  class="form-input rounded-md shadow-sm mt-1 block w-full" id="image" name="image" type="text">
+                            <input class="form-input rounded-md shadow-sm mt-1 block w-full" id="image" name="image" type="file">
                         </div>
                     </div>
                 </div>
