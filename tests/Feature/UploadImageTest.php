@@ -19,7 +19,7 @@ class UploadImageTest extends TestCase
         $file = UploadedFile::fake()->create('test.pdf', '1200');
 
         $city = City::factory()->make()->toArray();
-        $city['imageToUpload'] = $file;
+        $city['image'] = $file;
 
         $user = User::factory()->create(['role' => 'manager']);
         $response = $this->actingAs($user)->post('/cities', $city);

@@ -63,11 +63,7 @@
   <component name="ChangeListManager">
     <list default="true" id="709245a8-0467-45f8-acde-d2204be7ad6b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CityController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/statistic/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/statistic/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/statistic/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/statistic/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Browser/CreateTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Browser/CreateTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Browser/EditTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Browser/EditTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/UploadImageTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/UploadImageTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -265,7 +261,7 @@
       <workItem from="1604780494722" duration="610000" />
       <workItem from="1604787526271" duration="4404000" />
       <workItem from="1604804285129" duration="5965000" />
-      <workItem from="1604810539743" duration="197000" />
+      <workItem from="1604810539743" duration="698000" />
     </task>
     <servers />
   </component>
