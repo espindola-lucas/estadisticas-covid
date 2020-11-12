@@ -54,7 +54,7 @@ class CityController extends Controller
             ]);
             $input['image'] = $filePath;
 
-        $input = $request->all();
+        
 
         City::create([
             'name' => $input['name'],

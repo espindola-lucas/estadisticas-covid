@@ -48,7 +48,7 @@
             <div class="col-span-6 sm:col-span-6 md:col-span-3 lg:col-span-2 xl:col-span-2">
               <div class="bg-white shadow-lg rounded-lg px-4 py-6 mx-4 my-4">
                 <div class="mx-auto h-40 bg-gray-200 rounded-md">
-                <img src="{{$city-> image}}">
+                <img src="{{Storage::url($city-> image)}}">
                 </div>
                 <h2 class="mt-40 font-bold text-2xl text-gray-800 tracking-normal">{{ $city->name }}</h2>
                 <div class="h-6 bg-gray-200 w-40 mt-8 block mx-auto rounded-sm">Poblacion: {{ $city->population }}</div>
