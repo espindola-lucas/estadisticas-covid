@@ -10,7 +10,7 @@ class CityAPIController extends Controller
     //
 
     public function index(Request $request){
-        $cities = City::where('assigned_to' , $request->user()->id)->get();
+        $cities = City::all();
 
         return response()->json($cities);
     }
