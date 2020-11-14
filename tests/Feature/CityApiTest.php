@@ -31,8 +31,8 @@ class CityApiTest extends TestCase
 
         $response->assertStatus(200);
         $response->assertJsonCount(1);
-        $response->assertJson([  
-            "assigned_to" => $user->id
+        $response->assertJsonFragment([  
+            "assigned_to" => (string)$user->id
         ]);
     }
 }
