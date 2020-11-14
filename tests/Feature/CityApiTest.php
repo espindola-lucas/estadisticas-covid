@@ -16,7 +16,7 @@ class CityApiTest extends TestCase
      *
      * @return void
      */
-    public function testGetCitiesApi()
+    public function testUserCanReadAssignedCities()
     {
         $user = User::factory()->create();
         $city = City::factory()->create([
@@ -34,5 +34,25 @@ class CityApiTest extends TestCase
         $response->assertJsonFragment([  
             "assigned_to" => (string)$user->id
         ]);
+    }
+
+    public function testUserCanNotReadUnassignedCities()
+    {
+        $apiUser = User::factory()->create();
+        $cityUser = User::factory()->create();
+
+        $city = City::factory()->create([
+            "assigned_to" => $cityUser->id
+        ]);
+
+        Sanctum::actingAs(
+            $apiUser,
+            ['view-cities']
+        );
+
+        $response = $this->getJson('/api/cities');
+
+        $response->assertStatus(200);
+        $response->assertJsonCount(0);
     }
 }
