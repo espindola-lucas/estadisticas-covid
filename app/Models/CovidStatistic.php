@@ -9,7 +9,7 @@ class CovidStatistic extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['cases', 'dead', 'city_id', 'user_id'];
+    protected $fillable = ['cases', 'dead', 'created_at', 'city_id', 'user_id'];
 
     public function city()
     {

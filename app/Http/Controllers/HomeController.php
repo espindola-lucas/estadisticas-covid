@@ -16,8 +16,12 @@ class HomeController extends Controller
     public function index()
     {
         $cities = City::with('statistics')->get();
+        $statistics = CovidStatistic::with('city')->orderBy('created_at', 'DESC')->get();
+        $count = CovidStatistic::all()->count();
         return view('welcome', [
             'cities' => $cities,
+            'statistics' => $statistics,
+            'count' => $count
         ]);
     }
 
