@@ -19,7 +19,7 @@ class StatisticController extends Controller
         $statistics = CovidStatistic::with('city')->orderBy('created_at', 'DESC')->get();
         return view('statistic.index',[
             'statistics' => $statistics,
-            'cities' => $cities
+            'cities' => $cities,
         ]);
     }
 
@@ -34,7 +34,7 @@ class StatisticController extends Controller
         $cities = City::all();
         return view('statistic.create', [
             'cities' => $cities,
-            'users' => \App\Models\User::all() 
+            'users' => \App\Models\User::all()
             ]);
     }
 
@@ -90,7 +90,7 @@ class StatisticController extends Controller
     public function update(Request $request, CovidStatistic $statistic)
     {
         $this->authorize('update', $statistic);
-        $input = $request->all(); 
+        $input = $request->all();
         $statistic->update([
             'cases' => $input['cases'],
             'dead' => $input['dead'],
