@@ -1,5 +1,5 @@
 GET http://localhost:8080/api/cities
 Accept: application/json
-Authorization: Bearer LoPwjQMVNk3C0wpB1eIjnIfOn5rm4hOV8ezIXAm1
+Authorization: Bearer 0xTasxdhzNlBWyB6Gr4dTq9xVfoW6XXrXT3fCBny
 
 ###

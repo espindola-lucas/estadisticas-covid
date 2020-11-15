@@ -4,15 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="api.css">
     <title>Json Data</title>
 </head>
 
 <body>
-    <h1>Covid 19: Listado De Ciudades</h1>
+    <h1 class="roboto">Covid 19: Listado De Ciudades</h1>
 
-    <ul id="city">
+    <p id="loading" class="roboto"></p>
+    <div class="table-div">
+        <table class="roboto">
+            <thead>
+                <tr>
+                    <td>Ciudad</td>
+                    <td>Población</td>
+                </tr>
+            </thead>
+            <tbody id="city">
+            </tbody>
+        </table>
 
-    </ul>
+    </div>
 </body>
 <script src="api.js"></script>
 

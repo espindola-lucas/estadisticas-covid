@@ -1,20 +1,22 @@
 "use strict"
-document.addEventListener("DOMContentLoaded", function(event) {
-    let unorderedList = document.getElementById("city");
-    unorderedList.innerHTML = '<li> Cargando...</li>'
+document.addEventListener("DOMContentLoaded", function() {
+    let loading = document.getElementById("loading");
+    loading.innerHTML = 'Cargando...'
     fetch("http://localhost:8080/api/cities", {
         headers: {
-            Authorization: 'Bearer LoPwjQMVNk3C0wpB1eIjnIfOn5rm4hOV8ezIXAm1'
+            Authorization: 'Bearer 0xTasxdhzNlBWyB6Gr4dTq9xVfoW6XXrXT3fCBny'
         }
     }).then(
         function(response) {
             return response.json();
         }
     ).then(function(json) {
+        loading.innerHTML = '';
         console.log(json);
-        unorderedList.innerHTML = '';
+        let table = document.getElementById("city");
+        table.innerHTML = '';
         for (let city of json) {
-            unorderedList.innerHTML += '<li>' + city.name + '</li>';
+            table.innerHTML += '<tr>' + '<td>' + city.name + '</td>' + '<td>' + city.population + ' habitantes </td>' + '</tr>';
         }
     })
 });
