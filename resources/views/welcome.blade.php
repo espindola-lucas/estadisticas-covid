@@ -92,13 +92,16 @@
                   </div>
                 </div>
                 <div class="pr-4 mt-4">
-                    <span class="uppercase">Creation Statistic</span>
-                    <p class="text-2xl text-gray-900 font-semibold pt-2 bg-yellow-300 text-yellow-800 rounded-full py-2 px-4">
+                  <span class="uppercase">Creation Statistic</span>
+                  <p class="text-2xl text-gray-900 font-semibold pt-2 bg-yellow-300 text-yellow-800 rounded-full py-2 px-4">
                     {{ $statistic->created_at }}
-                  </div>
+                </div>
                 @endforeach
 
                 <!-- description -->
+                <div class="description w-full sm: md:w-2/3 mt-16 text-gray-500 text-lg text-center">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto quas autem obcaecati cumque!...
+                </div>
               </div>
             </div>
             <div class="bg-red-600 w-full md:w-1/2 h-auto">
