@@ -19,9 +19,7 @@ class CityApiTest extends TestCase
     public function testUserCanViewCities()
     {
         $user = User::factory()->create();
-        $city = City::factory()->create([
-            "assigned_to" => $user->id
-        ]);
+        $city = City::factory()->create();
         Sanctum::actingAs(
             $user,
             ['view-cities']
@@ -31,7 +29,7 @@ class CityApiTest extends TestCase
 
         $response->assertStatus(200);
         $response->assertJsonFragment([
-            "assigned_to" => (string)$user->id
+            "name" => $city->name
         ]);
     }
 }
