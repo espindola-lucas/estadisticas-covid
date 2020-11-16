@@ -15,6 +15,3 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "statistics-covid-app"
           heroku_email: "lucas.nahuel.espindola1998@gmail.com"
-      - name: Deploy to Heroku
-      run: |
-        git push heroku HEAD:master -f
