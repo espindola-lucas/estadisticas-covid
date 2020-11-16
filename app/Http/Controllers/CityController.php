@@ -41,12 +41,6 @@ class CityController extends Controller
         $input = $request->all();
         // Save file to disk
 
-        // $imagePath = $request->file('image')->store('files',
-        // [
-        //     'disk' => 'public'
-        // ]);
-
-
         $filePath = $request->file('image')->store('files',
         [
             'disk' => 'public'

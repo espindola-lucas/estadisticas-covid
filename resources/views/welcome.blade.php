@@ -29,7 +29,7 @@
       <main class="flex-grow flex justify-center items-center">
 
         <div class="mx-auto px-4 sm:px-8 py-2 text-center">
-          <h1 class="text-4xl "> Covid-19 </h1>
+          <h1 class="text-4xl underline"> Covid-19 </h1>
 
           <div class="p-2 bg-blue-200 text-center xl:max-w-2xl xl:h-40 mx-auto mt-6">
             Considerando el diferente impacto en la dinamica de transmision del virus, la diversidad
@@ -43,29 +43,6 @@
               • Distanciamiento Social, Preventivo y Obligatorio.
             </div>
           </div>
-
-          <!-- <div class="grid grid-cols-6 gap-4 items-start mt-8 mx-auto px-8">
-            @foreach ($cities as $city)
-            <div class="col-span-6 sm:col-span-6 md:col-span-3 lg:col-span-2 xl:col-span-2">
-              <div class="bg-white shadow-lg rounded-lg px-4 py-6 mx-4 my-4">
-                <div class="mx-auto h-40 bg-gray-200 rounded-md">
-                <img src="{{Storage::url($city-> image)}}">
-                </div>
-                <h2 class="mt-40 font-bold text-2xl text-gray-800 tracking-normal">{{ $city->name }}</h2>
-                <div class="h-6 bg-gray-200 w-40 mt-8 block mx-auto rounded-sm">Poblacion: {{ $city->population }}</div>
-                @foreach ($city->statistics as $statistic)
-                <div class="h-6 bg-gray-200 w-40 mt-8 block mx-auto rounded-sm">Fecha: {{ $statistic->created_at }}</div>
-                <div class="flex justify-center mt-10">
-
-                  <div class="rounded-sm h-8 w-40 px-4 bg-blue-300 text-blue-800 mr-2">Casos: {{ $statistic->cases }}</div>
-                  <div class="rounded-sm h-8 w-40 px-4 bg-red-300 text-red-800 mr-2">Fallecidos: {{ $statistic->dead }}</div>
-                  @endforeach
-                </div>
-              </div>
-            </div>
-            @endforeach
-
-          </div> -->
 
           <!-- component -->
           @foreach ($cities as $city)
