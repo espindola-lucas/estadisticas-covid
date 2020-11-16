@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Covid-19</title>
-
   </head>
 
   <body class="antialiased">
@@ -73,10 +72,10 @@
           <div class="flex flex-wrap md items-center h-auto mt-4">
             <div class="bg-white w-full md:w-1/2 h-auto">
               <div class="mx-32">
-                <h1 class="text-6xl font-bold mt-16">{{ $city->name }}</h1>
+                <h1 class="text-6xl font-mono mt-16">{{ $city->name }}</h1>
 
                 <!-- country region island -->
-                <div class="flex mt-16 font-light text-gray-500">
+                <div class="flex mt-16 font-mono text-gray-500">
                   <div class="pr-4">
                     <span class="uppercase">Population</span>
                     <p class="text-2xl text-gray-900 font-semibold pt-2 bg-green-300 text-green-800 rounded-full py-2 px-4">{{ $city->population }}</p>
@@ -91,21 +90,21 @@
                     <p class="text-2xl text-gray-900 font-semibold pt-2 bg-red-300 text-red-800 rounded-full py-2 px-4">{{ $statistic->dead }}</p>
                   </div>
                 </div>
-                <div class="pr-4 mt-4">
+                <div class="pr-4 mt-4 text-gray-500">
                   <span class="uppercase">Creation Statistic</span>
                   <p class="text-2xl text-gray-900 font-semibold pt-2 bg-yellow-300 text-yellow-800 rounded-full py-2 px-4">
-                    {{ $statistic->created_at }}
+                    {{ $statistic->created_at->format('Y-m-d') }}
                 </div>
                 @endforeach
 
                 <!-- description -->
-                <div class="description w-full sm: md:w-2/3 mt-16 text-gray-500 text-lg text-center">
+                <div class="description w-full sm: md:w-2/3 mt-16 text-lg text-center font-mono ml-14">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto quas autem obcaecati cumque!...
                 </div>
               </div>
             </div>
             <div class="bg-red-600 w-full md:w-1/2 h-auto">
-              <img src="{{Storage::url($city-> image)}}" class="h-auto w-full" alt="" />
+              <img src="{{Storage::url($city-> image)}}" class="h-auto w-full" alt="imagen de ciudad" />
             </div>
           </div>
           @endforeach

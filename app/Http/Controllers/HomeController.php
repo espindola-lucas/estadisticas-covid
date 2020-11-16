@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\City;
 use App\Models\CovidStatistic;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -17,12 +18,10 @@ class HomeController extends Controller
     {
         $cities = City::with('statistics')->get();
         $statistics = CovidStatistic::with('city')->orderBy('created_at', 'DESC')->get();
-        $count = CovidStatistic::all()->count();
         return view('welcome', [
             'cities' => $cities,
             'statistics' => $statistics,
-            'count' => $count
-        ]);
+            ]);
     }
 
     /**

@@ -39,7 +39,6 @@ class CityController extends Controller
     public function store(Request $request)
     {
         $input = $request->all();
-
         // Save file to disk
 
         // $imagePath = $request->file('image')->store('files',
@@ -48,11 +47,11 @@ class CityController extends Controller
         // ]);
 
 
-            $filePath = $request->file('image')->store('files',
-            [
-                'disk' => 'public'
-            ]);
-            $input['image'] = $filePath;
+        $filePath = $request->file('image')->store('files',
+        [
+            'disk' => 'public'
+        ]);
+        $input['image'] = $filePath;
 
         
 
