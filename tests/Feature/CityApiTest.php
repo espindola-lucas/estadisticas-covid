@@ -4,7 +4,6 @@ namespace Tests\Feature;
 
 use App\Models\User;
 use App\Models\City;
-use Laravel\Sanctum\Sanctum;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
@@ -20,7 +19,7 @@ class CityApiTest extends TestCase
     {
         $user = User::factory()->create();
         $city = City::factory()->create();
-        Sanctum::actingAs(
+        \Laravel\Sanctum\Sanctum::actingAs(
             $user,
             ['view-cities']
         );
