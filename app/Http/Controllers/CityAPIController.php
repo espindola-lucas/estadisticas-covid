@@ -8,17 +8,9 @@ use App\Models\City;
 class CityAPIController extends Controller
 {
     //
-    /*
     public function index(){
-        $cities = \App\Models\City::all();
+        $cities = City::all();
 
         return response()->json($cities);
-    } */
-    public function city(){
-        return City::all();
-    }
-
-    public function index(){
-        return response()->json(city());
     }
 }
