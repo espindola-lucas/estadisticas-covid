@@ -38,11 +38,6 @@ class StatisticController extends Controller
         return redirect('statistic');
     }
 
-    public function show(CovidStatistic $covidStatistic)
-    {
-        //
-    }
-
     public function edit(CovidStatistic $statistic)
     {
         $this->authorize('update', $statistic);

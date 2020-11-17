@@ -47,11 +47,6 @@ class CityController extends Controller
         return redirect('cities');
     }
 
-    public function show(City $city)
-    {
-        //
-    }
-
     public function edit(City $city)
     {
         $this->authorize('update', $city);
