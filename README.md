@@ -6,6 +6,6 @@
 ![Laravel](https://github.com/espindola-lucas/estadisticas-covid/workflows/Laravel/badge.svg)
 ![Deploy](https://github.com/espindola-lucas/estadisticas-covid/workflows/Deploy/badge.svg)
 
-Link to the application deployada in Heroku
+Link to the application deployed in heroku
 
 https://statistics-covid-app.herokuapp.com/
