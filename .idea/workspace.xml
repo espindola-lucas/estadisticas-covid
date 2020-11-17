@@ -62,19 +62,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="709245a8-0467-45f8-acde-d2204be7ad6b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api.http" beforeDir="false" afterPath="$PROJECT_DIR$/api.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CityAPIController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CityAPIController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Browser/CreateStatisticTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Browser/CreateStatisticTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/CityApiTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/CityApiTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CityController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StatisticController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StatisticController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/statistic/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/statistic/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Feature/CovidStatisticFeatureTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/CovidStatisticFeatureTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/HomeTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/HomeTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/UploadImageTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/UploadImageTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Unit/CovidStatisticUnitTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/CovidStatisticUnitTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Unit/UserTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/UserTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -298,6 +289,7 @@
       <workItem from="1605555181552" duration="4000" />
       <workItem from="1605570759704" duration="4154000" />
       <workItem from="1605609110832" duration="1856000" />
+      <workItem from="1605635870451" duration="634000" />
     </task>
     <servers />
   </component>

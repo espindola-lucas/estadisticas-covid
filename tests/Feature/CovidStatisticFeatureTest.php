@@ -94,6 +94,6 @@ class CovidStatisticFeatureTest extends TestCase
         $user = User::factory()->create(['role' => 'manager']);
         $response = $this->actingAs($user)->get('statistic');
         $response->assertSee(Str::limit($covidStatistic->name,25));
-        $response->assertSee($covidStatistic->created_at);
+        $response->assertSee($covidStatistic->created_at->format('Y-m-d'));
     }
 }

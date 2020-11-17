@@ -8,11 +8,7 @@ use Illuminate\Http\Request;
 
 class StatisticController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+ 
     public function index()
     {
         $cities = City::all();
@@ -23,11 +19,6 @@ class StatisticController extends Controller
         ]);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
         $this->authorize('create', CovidStatistic::class);
@@ -38,12 +29,6 @@ class StatisticController extends Controller
             ]);
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
         $this->authorize('create', CovidStatistic::class);
@@ -53,23 +38,11 @@ class StatisticController extends Controller
         return redirect('statistic');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\CovidStatistic  $covidStatistic
-     * @return \Illuminate\Http\Response
-     */
     public function show(CovidStatistic $covidStatistic)
     {
         //
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\CovidStatistic  $covidStatistic
-     * @return \Illuminate\Http\Response
-     */
     public function edit(CovidStatistic $statistic)
     {
         $this->authorize('update', $statistic);
@@ -80,13 +53,6 @@ class StatisticController extends Controller
             ]);
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\CovidStatistic  $covidStatistic
-     * @return \Illuminate\Http\Response
-     */
     public function update(Request $request, CovidStatistic $statistic)
     {
         $this->authorize('update', $statistic);
@@ -99,12 +65,6 @@ class StatisticController extends Controller
         return back()->with('success', 'Estadistica Actualizada!');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\CovidStatistic  $covidStatistic
-     * @return \Illuminate\Http\Response
-     */
     public function destroy(CovidStatistic $statistic)
     {
         $statistic->delete();

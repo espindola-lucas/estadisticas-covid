@@ -67,7 +67,7 @@
                                 {{ $statistic->user->name }}
                             </td>
                             <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
-                                {{ $statistic->created_at }}
+                                {{ $statistic->created_at->format('Y-m-d') }}
                             </td>
                             <td class="px-6 py-4 whitespace-no-wrap">
                                 <div class="text-sm leading-5 text-gray-900">{{ $statistic->city->population }}</div>
