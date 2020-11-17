@@ -5,3 +5,7 @@
 ![Dusk Tests](https://github.com/espindola-lucas/estadisticas-covid/workflows/Dusk%20Tests/badge.svg)
 ![Laravel](https://github.com/espindola-lucas/estadisticas-covid/workflows/Laravel/badge.svg)
 ![Deploy](https://github.com/espindola-lucas/estadisticas-covid/workflows/Deploy/badge.svg)
+
+Link to the application deployada in Heroku
+
+https://statistics-covid-app.herokuapp.com/

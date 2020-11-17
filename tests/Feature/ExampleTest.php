@@ -22,12 +22,12 @@ class ExampleTest extends TestCase
     {
         $user = User::factory()->create();
         $response = $this->actingAs($user)
-            ->get('/dashboard');
+            ->get('/cities');
       $response->assertStatus(200);
     }
     public function testGuestIsRedirectToLogin()
     {
-        $response = $this->get('/dashboard');
+        $response = $this->get('/cities');
 
         $response->assertRedirect('login');
     }
