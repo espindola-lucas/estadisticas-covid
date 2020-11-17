@@ -47,17 +47,16 @@ class CityFeatureTest extends TestCase
 
     public function testManagerCanEdit()
     {
-        $city = City::factory()->create();
         $user = User::factory()->create(['role' => 'manager']);
+        $city = City::factory()->create(['user_id' => $user->id]);
         $response = $this->actingAs($user)->get('cities/'.$city->id.'/edit/');
-        $response->assertForbidden();
+        $response->assertStatus(200);
     }
 
     public function testEditCity()
     {
-        $city = City::factory()->create();
-        $covidStatistic = CovidStatistic::factory()->create();
         $user = User::factory()->create(['role' => 'manager']);
+        $city = City::factory()->create(['user_id' => $user->id]);
         $response = $this->actingAs($user)->put('cities'.$city->id,
             [
                 'name' => 'Prueba',
