@@ -57,15 +57,15 @@ class CityFeatureTest extends TestCase
     {
         $user = User::factory()->create(['role' => 'manager']);
         $city = City::factory()->create(['user_id' => $user->id]);
-        $response = $this->actingAs($user)->put('cities'.$city->id,
+        $response = $this->actingAs($user)->put('cities/'.$city->id,
             [
                 'name' => 'Prueba',
                 'population' => 245,
                 'user_id' => $user->id
             ]);
         $city = City::first();
-        $this->assertNotEquals($city->name, 'Prueba');
-        $this->assertNotEquals($city->population, 245);
+        $this->assertEquals($city->name, 'Prueba');
+        $this->assertEquals($city->population, 245);
     }
 
     public function testDestroyCity()

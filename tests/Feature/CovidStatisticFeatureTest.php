@@ -68,7 +68,7 @@ class CovidStatisticFeatureTest extends TestCase
         $user = User::factory()->create(['role' => 'manager']);
         $covidStatistic = CovidStatistic::factory()->create(['user_id' => $user->id]);
         $user = User::factory()->create(['role' => 'manager']);
-        $response = $this->actingAs($user)->put('statistic'.$covidStatistic->id,
+        $response = $this->actingAs($user)->put('statistic/'.$covidStatistic->id,
             [
                 'cases' => 1045,
                 'dead' => 245,
