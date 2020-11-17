@@ -11,14 +11,10 @@ use Tests\DuskTestCase;
 class CreateStatisticTest extends DuskTestCase
 {
     use DatabaseMigrations;
-    /**
-     * A Dusk test example.
-     *
-     * @return void
-     */
+
     public function testStatisticCovidCreate(){
     $user = User::factory()->create([
-            'email' => 'example@example.com',
+            'email' => 'manager@manger.com',
             'password' => bcrypt('12345678'),
             'role' => 'manager'
         ]);

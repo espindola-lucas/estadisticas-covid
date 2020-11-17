@@ -4,14 +4,12 @@ namespace Tests\Unit;
 
 use Tests\TestCase;
 use App\Models\User;
+use Illuminate\Foundation\Testing\DatabaseMigrations;
 
 class UserTest extends TestCase
 {
-    /**
-     * A basic unit test example.
-     *
-     * @return void
-     */
+    use DatabaseMigrations;
+
     public function testUserIsManager()
     {
         $user = User::factory()->create(['role' => 'manager']);

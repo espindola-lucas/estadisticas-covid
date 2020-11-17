@@ -7,15 +7,13 @@ use App\Models\City;
 use Laravel\Sanctum\Sanctum;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
+use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 
 class CityApiTest extends TestCase
 {
-    /**
-     * A basic feature test example.
-     *
-     * @return void
-     */
+    use DatabaseMigrations;
+
     public function testUserCanViewCities()
     {
         $user = User::factory()->create();

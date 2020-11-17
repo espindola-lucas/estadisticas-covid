@@ -8,7 +8,7 @@ use Illuminate\Foundation\Testing\DatabaseMigrations;
 use App\Models\User;
 use Tests\TestCase;
 
-class CovidStatisticUnitTest extends TestCase
+class CityUnitTest extends TestCase
 {
     use DatabaseMigrations;
 

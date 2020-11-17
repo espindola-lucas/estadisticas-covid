@@ -7,16 +7,14 @@ use App\Models\User;
 use App\Models\CovidStatistic;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
+use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Support\Str;
 use Tests\TestCase;
 
-class CovidStatisticTest extends TestCase
+class CovidStatisticFeatureTest extends TestCase
 {
-    /**
-     * A basic feature test example.
-     *
-     * @return void
-     */
+    use DatabaseMigrations;
+
     public function testGuestCantCreateCovidStatistic()
     {
         $response = $this->get(route('statistic.create'));
@@ -40,7 +38,6 @@ class CovidStatisticTest extends TestCase
         $response->assertSee('Completar con ciudad, fecha, poblacion, casos y muertos.');
     }
 
-    /*Mal implementedo por el assertNotEquals*/
     public function testStoreCovidStatistic()
     {
         $user = User::factory()->create(['role' => 'manager']);
@@ -54,7 +51,7 @@ class CovidStatisticTest extends TestCase
         ]);
         $response->assertRedirect('/statistic');
         $covidStatistic = CovidStatistic::first();
-        $this->assertNotEquals($covidStatistic->cases, '1045');
+        $this->assertEquals($covidStatistic->cases, 1045);
     }
 
     public function testManagerCanEdit()
@@ -65,7 +62,6 @@ class CovidStatisticTest extends TestCase
         $response->assertForbidden();
     }
 
-    /*Mal implementedo por el assertNotEquals*/
     public function testEditCovidStatistic()
     {
         $city = City::factory()->create();
@@ -83,14 +79,13 @@ class CovidStatisticTest extends TestCase
         $this->assertNotEquals($covidStatistic->dead, 245);
     }
 
-    /*Mal implementedo por el assertNotEquals*/
     public function testDestroyCovidStatistic()
     {
         $covidStatistic = CovidStatistic::factory()->create();
         $user = User::factory()->create(['role' => 'manager']);
         $response = $this->actingAs($user)->delete('statistic/'.$covidStatistic->id);
         $covidStatistic = CovidStatistic::all();
-        $this->assertNotEquals($covidStatistic->count(), 0);
+        $this->assertEquals($covidStatistic->count(), 0);
     }
 
     public function testViewCovidStatisticList()
