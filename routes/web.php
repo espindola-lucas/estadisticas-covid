@@ -3,8 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StatisticController;
 use App\Http\Controllers\CityController;
-use App\Http\Controllers\HomeController;
-
+use Illuminate\Http\Request;
+use App\Models\City;
+use App\Models\CovidStatistic;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,4 +31,11 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function (){
     Route::resource('cities', CityController::class);
 });
 
-Route::resource('/', HomeController::class);
+Route::get('/',function () {
+    $cities = City::with('statistics')->get();
+    $statistics = CovidStatistic::all();
+  return view('welcome', [
+      'cities'=> $cities,
+      'statistics'=> $statistics 
+      ]);
+})->name('welcome');
