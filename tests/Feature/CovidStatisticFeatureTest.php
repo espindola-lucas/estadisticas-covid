@@ -67,7 +67,6 @@ class CovidStatisticFeatureTest extends TestCase
         $city = City::factory()->create();
         $user = User::factory()->create(['role' => 'manager']);
         $covidStatistic = CovidStatistic::factory()->create(['user_id' => $user->id]);
-        $user = User::factory()->create(['role' => 'manager']);
         $response = $this->actingAs($user)->put('statistic/'.$covidStatistic->id,
             [
                 'cases' => 1045,
@@ -76,8 +75,8 @@ class CovidStatisticFeatureTest extends TestCase
                 'user_id' => $user->id
             ]);
         $covidStatistic = CovidStatistic::first();
-        $this->assertNotEquals($covidStatistic->cases, 1045);
-        $this->assertNotEquals($covidStatistic->dead, 245);
+        $this->assertEquals($covidStatistic->cases, 1045);
+        $this->assertEquals($covidStatistic->dead, 245);
     }
 
     public function testDestroyCovidStatistic()

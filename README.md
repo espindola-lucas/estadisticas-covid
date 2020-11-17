@@ -9,3 +9,17 @@
 Link to the application deployed in heroku
 
 https://statistics-covid-app.herokuapp.com/
+
+Steps to follow to have the application running on your machine:
+    - Install Docker (https://docs.docker.com/get-docker/)
+    - Clone the repository
+    - Configure the connection to the database in the .env file
+        - DB_CONNECTION=pgsql
+        - DB_HOST=database
+        - DB_PORT=5432
+        - DB_DATABASE=mydb  
+        - DB_USERNAME=myuser
+        - DB_PASSWORD=thisisasecretpassword
+    - Execute the command (sudo docker run --rm -v $ (pwd): / app composer install) to download missing files for the correct operation of the application
+    - Generate the key for the .env file with the following command (php artisan key: generate)
+    - Run docker-compose up -d, open the browser and go to localhost: 8080 (or whatever port you have exposed)
