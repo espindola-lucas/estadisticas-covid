@@ -64,6 +64,7 @@
     <list default="true" id="709245a8-0467-45f8-acde-d2204be7ad6b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api.http" beforeDir="false" afterPath="$PROJECT_DIR$/api.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CityAPIController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CityAPIController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
@@ -296,7 +297,7 @@
       <workItem from="1605553457249" duration="27000" />
       <workItem from="1605555181552" duration="4000" />
       <workItem from="1605570759704" duration="4154000" />
-      <workItem from="1605609110832" duration="1237000" />
+      <workItem from="1605609110832" duration="1856000" />
     </task>
     <servers />
   </component>
