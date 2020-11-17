@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\City;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class CityController extends Controller
@@ -27,7 +28,10 @@ class CityController extends Controller
      */
     public function create()
     {
-        return view('cities.create');
+        $users = User::all();
+        return view('cities.create', [
+            'users' => $users
+        ]);
     }
 
     /**
@@ -52,7 +56,8 @@ class CityController extends Controller
         City::create([
             'name' => $input['name'],
             'population' => $input['population'],
-            'image' =>  $input['image']
+            'image' =>  $input['image'],
+            'user_id' => $input['user_id']
         ]);
         return redirect('cities');
     }
@@ -76,6 +81,7 @@ class CityController extends Controller
      */
     public function edit(City $city)
     {
+        $this->authorize('update', $city);
         return view ('cities.edit', [
             'city' => $city
             ]);
@@ -90,6 +96,7 @@ class CityController extends Controller
      */
     public function update(Request $request, City $city)
     {
+        $this->authorize('update', $city);
         $input=$request->all();
         $city -> update($input);
         return redirect('cities');

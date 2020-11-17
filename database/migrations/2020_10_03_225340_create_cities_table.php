@@ -19,6 +19,7 @@ class CreateCitiesTable extends Migration
             $table->string('population');
             $table->string('image');
             $table->timestamps();
+            $table->foreignId('user_id');
         });
     }
 

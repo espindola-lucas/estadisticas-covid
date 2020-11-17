@@ -29,6 +29,9 @@
                                 Ciudad
                             </th>
                             <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                                Usuario
+                            </th>
+                            <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
                                 Id de Ciudad
                             </th>
                             <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
@@ -51,6 +54,9 @@
                                 </div>
                             </td>
                             <td class="px-6 py-4 whitespace-no-wrap">
+                                <div class="text-sm leading-5 text-gray-900">{{ $city->user->name }}</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-no-wrap">
                                 <div class="text-sm leading-5 text-gray-900">{{ $city->id }}</div>
                             </td>
                             <td class="px-6 py-4 whitespace-no-wrap">
@@ -58,16 +64,20 @@
                             </td>
                             <td class="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium">
                                 <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-purple-100 text-purple-800">
-                                <a dusk="goEdit" href="{{ route('cities.edit',$city->id) }}" class="text-indigo-600 hover:text-indigo-900">Editar</a>
+                                @can ('update', $city)  
+                                    <a dusk="goEdit" href="{{ route('cities.edit',$city->id) }}" class="text-indigo-600 hover:text-indigo-900">Editar</a>
+                                @endcan
                             </td>
                             <form method="POST" action="{{ route('cities.destroy', $city) }}">
                                @method('DELETE')
                                 @csrf
                                 <td class="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium">
                                     <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-purple-100 text-purple-800">
-                                    <button type="submit" class="text-indigo-600 hover:text-indigo-900">
-                                        Eliminar
-                                    </button>
+                                    @can ('update', $city)
+                                        <button type="submit" class="text-indigo-600 hover:text-indigo-900">
+                                            Eliminar
+                                        </button>
+                                    @endcan
                                 </td>
                             </form>
                             </tr>

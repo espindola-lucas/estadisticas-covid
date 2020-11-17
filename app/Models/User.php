@@ -65,6 +65,11 @@ class User extends Authenticatable
         return $this->hasMany(CovidStatistic::class);
     }
 
+    public function city()
+    {
+        return $this->hasMany(City::class);
+    }
+
     public function isManager()
     {
         return $this->attributes['role'] == 'manager';
