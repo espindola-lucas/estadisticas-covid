@@ -229,7 +229,10 @@
       <recent name="$PROJECT_DIR$/tests/Unit" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.CovidStatisticFeatureTest.testDestroyCovidStatistic">
+  <component name="RunManager" selected="HTTP Request.api#1">
+    <configuration name="api#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/api.http" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="CovidStatisticFeatureTest.testDestroyCovidStatistic" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\CovidStatisticFeatureTest" file="$PROJECT_DIR$/tests/Feature/CovidStatisticFeatureTest.php" method="testDestroyCovidStatistic" scope="Method" />
       <method v="2" />
@@ -240,6 +243,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.api#1" />
         <item itemvalue="PHPUnit.CovidStatisticFeatureTest.testDestroyCovidStatistic" />
       </list>
     </recent_temporary>

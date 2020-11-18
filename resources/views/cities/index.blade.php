@@ -3,7 +3,6 @@
     <div class="mb-6 lg:flex lg:items-center lg:justify-between">
         <div class="flex-1 min-w-0">
             <h2 class="text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:leading-9 sm:truncate">
-                Estadisticas recientes
             </h2>
         </div>
         <div class="mt-5 flex lg:mt-0 lg:ml-4">
@@ -64,7 +63,7 @@
                             </td>
                             <td class="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium">
                                 <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-purple-100 text-purple-800">
-                                @can ('update', $city)  
+                                @can ('update', $city)
                                     <a dusk="goEdit" href="{{ route('cities.edit',$city->id) }}" class="text-indigo-600 hover:text-indigo-900">Editar</a>
                                 @endcan
                             </td>
