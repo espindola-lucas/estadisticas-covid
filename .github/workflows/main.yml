@@ -16,3 +16,5 @@ jobs:
           heroku_app_name: "statistics-covid-app"
           heroku_email: "lucas.nahuel.espindola1998@gmail.com"
           justlogin: true
+      - run: |
+          git push heroku master
