@@ -40,9 +40,8 @@ class CityFeatureTest extends TestCase
             'population' => 245,
             'user_id' => $user->id
         ]);
-        $response = $this->actingAs($user)->get('/cities');
         $city = City::first();
-        $this->assertNotEquals($city->name, 'Prueba');
+        $this->assertDatabaseHas('cities', $city->toArray());
     }
 
     public function testManagerCanEdit()
