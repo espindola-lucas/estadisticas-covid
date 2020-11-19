@@ -55,40 +55,4 @@ class CityPolicy
     {
         return $user->id === $city->user->id;
     }
-
-    /**
-     * Determine whether the user can delete the model.
-     *
-     * @param  \App\Models\User  $user
-     * @param  \App\Models\City  $city
-     * @return mixed
-     */
-    public function delete(User $user, City $city)
-    {
-        return true;
-    }
-
-    /**
-     * Determine whether the user can restore the model.
-     *
-     * @param  \App\Models\User  $user
-     * @param  \App\Models\City  $city
-     * @return mixed
-     */
-    public function restore(User $user, City $city)
-    {
-        return true;
-    }
-
-    /**
-     * Determine whether the user can permanently delete the model.
-     *
-     * @param  \App\Models\User  $user
-     * @param  \App\Models\City  $city
-     * @return mixed
-     */
-    public function forceDelete(User $user, City $city)
-    {
-        return true;
-    }
 }

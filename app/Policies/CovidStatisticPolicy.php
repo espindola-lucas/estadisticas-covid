@@ -55,40 +55,4 @@ class CovidStatisticPolicy
     {
         return $user->id === $covidStatistic->user->id;
     }
-
-    /**
-     * Determine whether the user can delete the model.
-     *
-     * @param  \App\Models\User  $user
-     * @param  \App\Models\CovidStatistic  $covidStatistic
-     * @return mixed
-     */
-    public function delete(User $user, CovidStatistic $covidStatistic)
-    {
-        return true;
-    }
-
-    /**
-     * Determine whether the user can restore the model.
-     *
-     * @param  \App\Models\User  $user
-     * @param  \App\Models\CovidStatistic  $covidStatistic
-     * @return mixed
-     */
-    public function restore(User $user, CovidStatistic $covidStatistic)
-    {
-        return true;
-    }
-
-    /**
-     * Determine whether the user can permanently delete the model.
-     *
-     * @param  \App\Models\User  $user
-     * @param  \App\Models\CovidStatistic  $covidStatistic
-     * @return mixed
-     */
-    public function forceDelete(User $user, CovidStatistic $covidStatistic)
-    {
-        return true;
-    }
 }
