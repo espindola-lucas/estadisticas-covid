@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Coronavirus</title>
+    <title>Covid-19</title>
   </head>
 
   <body class="antialiased">
