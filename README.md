@@ -6,7 +6,6 @@
 ![Dusk Tests](https://github.com/espindola-lucas/estadisticas-covid/workflows/Dusk%20Tests/badge.svg)
 ![Laravel](https://github.com/espindola-lucas/estadisticas-covid/workflows/Laravel/badge.svg) -->
 ![Deploy](https://github.com/espindola-lucas/estadisticas-covid/workflows/Deploy/badge.svg)
-<object data="https://supershields.io/1234567890abcdef0011" height="30px"></object>
 
 <h2>Link to the application deployed in heroku</h2>
 
